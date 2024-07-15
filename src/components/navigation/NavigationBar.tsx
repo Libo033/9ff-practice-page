@@ -4,6 +4,7 @@ import { Drawer } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
+import NavigationDrawer from "./NavigationDrawer";
 
 const NavigationBar = () => {
   const [toggleDrawer, setToggleDrawer] = useState<boolean>(false);
@@ -45,14 +46,12 @@ const NavigationBar = () => {
             </li>
           </ul>
         </Link>
-        <div onClick={handleOpenDrawer} className="absolute right-6">
+        <div onClick={handleOpenDrawer} className="absolute right-6 lg:hidden">
           <Menu sx={{ fontSize: "39px" }} />
         </div>
-        <Drawer
-          anchor="top"
-          open={toggleDrawer}
-          onClose={handleCloseDrawer}
-        ></Drawer>
+        <Drawer anchor="top" open={toggleDrawer} onClose={handleCloseDrawer}>
+          <NavigationDrawer onClose={handleCloseDrawer} />
+        </Drawer>
       </nav>
     </div>
   );

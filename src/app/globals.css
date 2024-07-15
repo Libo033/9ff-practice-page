@@ -13,3 +13,10 @@
   padding: 0;
   margin: 0;
 }
+
+.bg-carbon-fiber {
+  background-image: url("https://res.cloudinary.com/dsuydyqgz/image/upload/v1721065837/08-9ff-practice-page/rhkcmiujvala8jrzezpm.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
