@@ -18,7 +18,7 @@ const NavigationBar = () => {
 
   return (
     <div>
-      <nav className="relative flex justify-center items-center">
+      <nav className="bg-[#ffffff30] shadow-md backdrop-blur-sm w-full fixed flex justify-center items-center">
         <Link href={"/"}>
           <ul className="w-full inline-flex items-center justify-center p-4">
             <li>
