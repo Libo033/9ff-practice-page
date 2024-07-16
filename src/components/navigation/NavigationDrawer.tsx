@@ -10,11 +10,13 @@ const linkActive: string = "text-[#b0a17b] font-medium text-xl uppercase";
 
 interface NavigationDrawerProps {
   onClose: () => void;
+  pathname: string;
 }
 
-const NavigationDrawer = ({ onClose }: Readonly<NavigationDrawerProps>) => {
-  const pathname: string = usePathname();
-
+const NavigationDrawer = ({
+  onClose,
+  pathname,
+}: Readonly<NavigationDrawerProps>) => {
   return (
     <div className="bg-carbon-fiber h-screen w-screen lg:hidden">
       <div className="flex flex-col">
