@@ -20,3 +20,12 @@
   background-position: center;
   background-size: cover;
 }
+
+.icon-hover {
+  transition: ease-in-out 200ms;
+  cursor: pointer;
+}
+
+.icon-hover:hover {
+  color: #b0a17b;
+}
