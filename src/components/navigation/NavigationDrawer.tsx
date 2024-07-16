@@ -2,7 +2,6 @@
 import { Close } from "@mui/icons-material";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import React from "react";
 
 const link: string = "text-white font-medium text-xl uppercase";

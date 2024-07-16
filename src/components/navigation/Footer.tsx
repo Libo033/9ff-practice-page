@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className="w-full bg-gray-900 rounded-t-lg">
       <footer className="flex flex-col items-center">
-        <div className="pt-10 flex gap-6">
+        <div className="pt-10 flex gap-6 lg:gap-12">
           <ShoppingCart
             className="icon-hover"
             sx={{ color: "white", fontSize: "32px" }}
