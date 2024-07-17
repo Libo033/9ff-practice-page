@@ -3,7 +3,7 @@ import { Menu } from "@mui/icons-material";
 import { Drawer } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import NavigationDrawer from "./NavigationDrawer";
 import { usePathname } from "next/navigation";
 
@@ -22,6 +22,10 @@ const NavigationBar = () => {
   const handleCloseDrawer = () => {
     setToggleDrawer(false);
   };
+
+  useEffect(() => {
+    setToggleDrawer(false);
+  }, [pathname]);
 
   return (
     <div className="bg-[#ffffff30] shadow-md  backdrop-blur-sm fixed w-screen h-[91px] flex justify-center">
