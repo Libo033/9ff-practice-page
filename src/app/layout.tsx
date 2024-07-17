@@ -3,6 +3,7 @@ import { Rubik } from "next/font/google";
 import "./globals.css";
 import NavigationBar from "@/components/navigation/NavigationBar";
 import Footer from "@/components/navigation/Footer";
+import FloatingButtonTop from "@/components/navigation/FloatingButtonTop";
 
 const rubik = Rubik({ subsets: ["latin"] });
 
@@ -18,10 +19,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={rubik.className}>
+      <body className={rubik.className + " relative"}>
         <NavigationBar />
         {children}
         <Footer />
+        <FloatingButtonTop />
       </body>
     </html>
   );
