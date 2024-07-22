@@ -28,7 +28,7 @@ const NavigationBar = () => {
   }, [pathname]);
 
   return (
-    <div className="bg-[#ffffff30] shadow-md  backdrop-blur-sm fixed w-screen h-[91px] flex justify-center">
+    <div className="bg-[#ffffff99] z-50 shadow-md  backdrop-blur-md fixed w-screen h-[91px] flex justify-center">
       <nav className="w-screen flex justify-center items-center lg:max-w-screen-2xl lg:justify-between">
         <Link href={"/"}>
           <ul className="w-full inline-flex items-center justify-center p-4 lg:ml-[21%]">
