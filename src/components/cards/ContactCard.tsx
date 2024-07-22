@@ -6,7 +6,7 @@ const ContactCard = () => {
   const r = useRouter();
 
   return (
-    <div className="mt-8 flex flex-col bg-white border-t-2 bg-[#b0a17b60] rounded-t-lg">
+    <div className="mt-8 flex flex-col border-t-2 bg-[#b0a17b60] rounded-t-lg">
       <div className="pt-6 flex flex-col items-center">
         <p className="text">DO YOU HAVE INTEREST ON A 9FF VEHICLE?</p>
         <p className="text-lg font-bold">WE ARE THERE FOR YOU</p>
