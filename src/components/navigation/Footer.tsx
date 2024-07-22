@@ -3,7 +3,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="w-full bg-gray-900 rounded-t-lg">
+    <div className="w-full bg-gray-900">
       <footer className="flex flex-col items-center">
         <div className="pt-10 flex gap-6 lg:gap-12">
           <ShoppingCart
