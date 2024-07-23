@@ -11,6 +11,7 @@ const news: NewsCardProps[] = [
     ],
     title: "992 upgrades available",
     info: "High quality 9FF tuning for various 992 models available in our shop, or contact us for an individual upgrade!",
+    reverse: false,
   },
   {
     image: [
@@ -18,6 +19,7 @@ const news: NewsCardProps[] = [
     ],
     title: "Tunning with warranty",
     info: "TÜV-certified and registered as a vehicle manufacturer with the Federal Motor Transport Authority. Our basic philosophy: Our vehicles should be unrestrictedly reliable, durable and above all roadworthy. All automotive parts that we offer are resilient, high quality and also have real special features.",
+    reverse: true,
   },
 ];
 
@@ -26,11 +28,11 @@ export default function Home() {
     <main className="pt-[91px] max-w-screen-2xl m-auto">
       <HomeFlyer />
       {news.length > 0 && (
-        <section className="pt-10 mx-4 flex flex-col gap-2">
+        <section className="pt-10 px-4 flex flex-col gap-2 md:px-8 lg:px-32">
           <p className="text-4xl font-extrabold underline decoration-[#b0a17b] text-black">
             News
           </p>
-          {news.map((n) => (
+          {news.map((n, i) => (
             <NewsCard key={n.title} {...n} />
           ))}
         </section>
