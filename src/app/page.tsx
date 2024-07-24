@@ -26,7 +26,7 @@ const news: NewsCardProps[] = [
 
 export default function Home() {
   return (
-    <main className="pt-[91px] max-w-screen-2xl m-auto">
+    <main className="pt-[91px] max-w-screen-2xl m-auto bg-gray-100">
       <HomeFlyer />
       {news.length > 0 && (
         <section className="pt-10 px-4 flex flex-col gap-2 md:px-8 lg:px-32">

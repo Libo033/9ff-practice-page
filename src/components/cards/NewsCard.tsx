@@ -6,7 +6,7 @@ const NewsCard = ({ image, title, info, reverse }: Readonly<NewsCardProps>) => {
   return (
     <article
       className={
-        "mt-2 border-2 rounded md:flex " +
+        "bg-white mt-2 border-2 rounded md:flex " +
         (reverse ? " md:flex-row-reverse" : "")
       }
     >
