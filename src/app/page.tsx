@@ -39,11 +39,11 @@ export default function Home() {
         </section>
       )}
       <div className="pt-10 px-4 md:px-8 md:pt-16 md:flex md:items-center md:justify-center lg:px-32">
-        <p className="text-4xl">
+        <p className="text-4xl text-pretty md:text-2xl lg:text-4xl">
           'AT 9FF, <b className="text-[#b0a17b]">PERFORMANCE</b> IS A{" "}
           <b className="text-[#b0a17b]">PROMISE</b>'
         </p>
-        <p className="text-2xl">&nbsp;- JAN FATTHAUER</p>
+        <p className="text-2xl md:text-lg lg:text-2xl">&nbsp;- JAN FATTHAUER</p>
       </div>
       <ServiceCard />
       <ContactCard />
