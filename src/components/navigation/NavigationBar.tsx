@@ -34,18 +34,18 @@ const NavigationBar = () => {
           <ul className="w-full inline-flex items-center justify-center p-4 lg:ml-[21%]">
             <li>
               <Image
-                className="p-1 pr-0"
+                className="p-1 pr-0 max-w-[90px]"
                 src={
-                  "https://res.cloudinary.com/dsuydyqgz/image/upload/v1720719169/08-9ff-practice-page/dq0vv9y6fmo136vaetx7.png"
+                  "https://res.cloudinary.com/dsuydyqgz/image/upload/v1721866590/08-9ff-practice-page/hocnqmykgwyg9xjq6vpb.png"
                 }
                 alt="9ff logo"
-                width={44}
-                height={56}
+                width={180}
+                height={240}
               />
             </li>
             <li>
               <Image
-                className="p-4"
+                className="p-4 pl-0"
                 src={
                   "https://res.cloudinary.com/dsuydyqgz/image/upload/v1720719174/08-9ff-practice-page/mgvj3drclxfl1jw0oukr.png"
                 }
