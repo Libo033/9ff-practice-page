@@ -17,12 +17,12 @@ const ContactInfo = () => {
           <p className="text-2xl text-[#b0a17b] font-bold uppercase underline decoration-black sm:text-xl">
             email
           </p>
-          <p className="sm:text-sm">Service requests</p>
-          <p className="sm:text-sm">email@9ff.com</p>
-          <p className="sm:text-sm">General inquiries</p>
-          <p className="sm:text-sm">email@9ff.com</p>
-          <p className="sm:text-sm">Press inquiries</p>
-          <p className="sm:text-sm">email@9ff.com</p>
+          <p className="sm:text-sm">Service requests:</p>
+          <p className="text-blue-500 underline sm:text-sm">email@9ff.com</p>
+          <p className="sm:text-sm">General inquiries:</p>
+          <p className="text-blue-500 underline sm:text-sm">email@9ff.com</p>
+          <p className="sm:text-sm">Press inquiries:</p>
+          <p className="text-blue-500 underline sm:text-sm">email@9ff.com</p>
         </div>
       </div>
       <div className="flex flex-col p-4 gap-6 sm:flex-row sm:justify-around">
