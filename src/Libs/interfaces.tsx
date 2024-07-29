@@ -4,3 +4,10 @@ export interface NewsCardProps {
   info: string;
   reverse: boolean;
 }
+
+export interface TimelineCardProps {
+  year: number;
+  car: string;
+  description: string;
+  image: string;
+}
