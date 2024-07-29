@@ -1,10 +1,23 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import { useRouter } from "next/navigation";
+import React, { FormEvent } from "react";
 
 const ContactForm = () => {
+  const r = useRouter();
+
+  const handleManageForm = (Event: FormEvent) => {
+    Event.preventDefault();
+
+    r.push("/");
+  };
+
   return (
     <div className="py-8 px-4 sm:px-20 md:px-32 lg:px-64 xl:px-[27%] 2xl:px-[30%]">
-      <form className="relative bg-white py-6 px-6 border-2 rounded flex flex-col ">
+      <form
+        onSubmit={(Event: FormEvent) => handleManageForm(Event)}
+        className="relative bg-white py-6 px-6 border-2 rounded flex flex-col"
+      >
         <div className="w-full">
           <p className="text-2xl text-center font-semibold uppercase tracking-widest">
             Contact
@@ -21,6 +34,7 @@ const ContactForm = () => {
                 type="text"
                 id="name"
                 placeholder="Your name"
+                required
               />
             </div>
             <div className="flex flex-col sm:w-1/2">
@@ -32,6 +46,7 @@ const ContactForm = () => {
                 type="text"
                 id="email"
                 placeholder="Your email"
+                required
               />
             </div>
           </div>
@@ -45,10 +60,14 @@ const ContactForm = () => {
               id="message"
               placeholder="Describe your request"
               rows={6}
+              required
             ></textarea>
           </div>
           <div className="flex justify-center pt-8">
-            <button className="border border-[#b0a17b] bg-gray-800 uppercase w-40 py-2 rounded text-white duration-150 hover:bg-slate-100 hover:text-[#b0a17b]">
+            <button
+              type="submit"
+              className="border border-[#b0a17b] bg-gray-800 uppercase w-40 py-2 rounded text-white duration-150 hover:bg-slate-100 hover:text-[#b0a17b]"
+            >
               SUBMIT
             </button>
           </div>
