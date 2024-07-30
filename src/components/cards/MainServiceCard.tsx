@@ -10,17 +10,23 @@ const MainServiceCard = ({
   info,
   button,
 }: Readonly<MainServicesCard>) => {
-  console.log(id);
-
   return (
-    <article className={"border-2 rounded-lg md:flex " + ""}>
+    <article
+      className={
+        "border-2 rounded-lg md:flex " +
+        (id % 2 === 0 ? "md:flex-row-reverse" : "")
+      }
+    >
       <div className="rounded-t-lg md:w-1/2 lg:h-[300px]">
         <Image
-          className="rounded-t-md md:rounded-l-md md:rounded-none md:h-full md:object-cover"
+          className={
+            "rounded-t-md md:rounded-none md:h-full md:object-cover " +
+            (id % 2 === 0 ? "md:rounded-r-md" : "md:rounded-l-md")
+          }
           src={image}
           alt={title}
           width={1600}
-          height={1066}
+          height={1200}
         />
       </div>
       <div className="p-3 md:w-1/2 md:flex md:flex-col md:px-6">
