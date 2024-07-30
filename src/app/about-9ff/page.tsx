@@ -14,8 +14,7 @@ const About9ff = () => {
         <Team9ff />
         <div className="px-4 h-40 rounded-lg md:px-8 md:h-52 lg:px-32 lg:h-80 2xl:h-96">
           <Image
-            /* Fixear width para valores LG XL 2XL*/
-            className="h-full flex justify-center rounded-lg object-cover"
+            className="h-full flex justify-center rounded-lg object-cover 2xl:w-full"
             src={
               "https://res.cloudinary.com/dsuydyqgz/image/upload/v1722260245/08-9ff-practice-page/ztzenerc78tje1blumsh.jpg"
             }
