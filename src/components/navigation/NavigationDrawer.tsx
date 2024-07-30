@@ -55,14 +55,6 @@ const NavigationDrawer = ({
           </li>
           <li>
             <Link
-              className={pathname === "/gallery" ? linkActive : link}
-              href={"/gallery"}
-            >
-              gallery
-            </Link>
-          </li>
-          <li>
-            <Link
               className={pathname === "/about-9ff" ? linkActive : link}
               href={"/about-9ff"}
             >
