@@ -11,3 +11,11 @@ export interface TimelineCardProps {
   description: string;
   image: string;
 }
+
+export interface MainServicesCard {
+  image: string;
+  title: string;
+  info: string;
+  button: string;
+  id: number;
+}
