@@ -34,9 +34,30 @@ const Services = () => {
   return (
     <main className="pt-[91px] max-w-screen-2xl m-auto">
       <div className="px-4 md:px-8 lg:px-32">
-        <p className="bg-white rounded-lg shadow-lg mt-4 py-4 text-xl text-center font-semibold border-4 border-[#b0a17b]">
+        <p className="bg-white rounded-lg shadow-lg mt-4 py-4 text-2xl text-center font-semibold border  phare-service">
           SERVICES FOR OUR CUSTOMERS
         </p>
+      </div>
+      <div className="px-4 pt-8 md:px-8 lg:px-32">
+        <div className="bg-white p-5 border-2 rounded">
+          <p className="pb-6 text-center text-xl font-medium">WHAT 9FF DOES</p>
+          <p className="text-pretty text-justify">
+            We are proud that 9FF is one of the smaller German vehicle
+            manufacturers approved by the Federal Motor Transport Authority. We
+            don't build vehicles in series. The individual customer request is
+            always in the foreground for us. We refine your sports car according
+            to your individual ideas or you choose one of ours 9FF Supercars.
+            <br />
+            It is our many satisfied customers from home and abroad, who have
+            made us a little bigger at 9FF in the past 15 years - with all
+            modesty - and continuously better because of their high standards.
+            <br />
+            <br />
+            <i className="text-lg text-[#b0a17b]">
+              Let yourself be inspired by our services.
+            </i>
+          </p>
+        </div>
       </div>
       <div className="px-4 flex flex-col gap-6 pt-8 md:px-8 lg:px-32">
         {services.map((s) => (

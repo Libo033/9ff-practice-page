@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 :root {
-  
 }
 
 @media (prefers-color-scheme: dark) {
@@ -33,4 +32,9 @@ body {
 
 .icon-hover:hover {
   color: #b0a17b;
+}
+
+.phare-service {
+  color: #b0a17b;
+  -webkit-text-stroke: 0.72px black;
 }
