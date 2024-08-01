@@ -24,7 +24,7 @@ const SupercarCard = ({
     <article className="px-4 md:px-8 lg:px-32">
       <div
         ref={supercarCard}
-        className="h-[350px] relative flex items-center justify-center cursor-pointer duration-200"
+        className="h-[180px] relative flex items-center justify-center cursor-pointer duration-200 lg:h-[350px]"
       >
         <Image
           className="h-full object-cover object-center rounded-lg"
@@ -37,7 +37,7 @@ const SupercarCard = ({
           {title}
         </p>
         <p
-          className={`absolute z-40 tracking-wider translate-y-5 duration-200 ${
+          className={`absolute px-2 text-center text-pretty text-sm z-40 tracking-wider translate-y-5 duration-200 sm:text-base sm:px-0 ${
             hoverCard ? "text-[#f8dfa3]" : "text-transparent"
           }`}
         >
