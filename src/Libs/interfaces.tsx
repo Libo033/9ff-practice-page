@@ -26,3 +26,8 @@ export interface SupercarCardProps {
   phrase: string;
   redirect: string;
 }
+
+export interface PageHeaderProps {
+  title: string;
+  phrase: string;
+}

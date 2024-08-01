@@ -1,7 +1,8 @@
+import { PageHeaderProps } from "@/Libs/interfaces";
 import Image from "next/image";
 import React from "react";
 
-const AboutHeader = () => {
+const PageHeader = ({ title, phrase }: Readonly<PageHeaderProps>) => {
   return (
     <div className="px-4 md:px-8 lg:px-32">
       <div className="flex justify-center">
@@ -28,15 +29,22 @@ const AboutHeader = () => {
               height={37}
             />
           </li>
-          <li className="w-full pt-4 pb-6">
-            <p className="px-2 text-center text-xl text-pretty font-light">
-              'With attention to detail, we achieve impressive performance'
-            </p>
-          </li>
+          {title && (
+            <li className="w-full pt-4 pb-6">
+              <p>{title}</p>
+            </li>
+          )}
+          {phrase && (
+            <li className="w-full pt-4 pb-6">
+              <p className="px-2 text-center text-xl text-pretty font-light">
+                {phrase}
+              </p>
+            </li>
+          )}
         </ul>
       </div>
     </div>
   );
 };
 
-export default AboutHeader;
+export default PageHeader;
