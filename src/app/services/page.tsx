@@ -2,6 +2,7 @@ import React from "react";
 import ContactCard from "@/components/cards/ContactCard";
 import MainServiceCard from "@/components/cards/MainServiceCard";
 import { MainServicesCard } from "@/Libs/interfaces";
+import PageHeader from "@/components/others/PageHeader";
 
 const services: MainServicesCard[] = [
   {
@@ -33,11 +34,7 @@ const services: MainServicesCard[] = [
 const Services = () => {
   return (
     <main className="pt-[91px] max-w-screen-2xl m-auto">
-      <div className="px-4 md:px-8 lg:px-32">
-        <p className="bg-white rounded-lg shadow-lg mt-4 py-4 text-2xl text-center font-semibold border  phare-service">
-          SERVICES FOR OUR CUSTOMERS
-        </p>
-      </div>
+      <PageHeader title="SERVICES" phrase="" />
       <div className="px-4 pt-8 md:px-8 lg:px-32">
         <div className="bg-white p-5 border-2 rounded">
           <p className="pb-6 text-center text-xl font-medium">WHAT 9FF DOES</p>
