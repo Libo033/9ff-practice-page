@@ -19,3 +19,10 @@ export interface MainServicesCard {
   button: string;
   id: number;
 }
+
+export interface SupercarCardProps {
+  image: string;
+  title: string;
+  phrase: string;
+  redirect: string;
+}
