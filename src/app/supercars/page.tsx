@@ -2,6 +2,7 @@ import React from "react";
 import ContactCard from "@/components/cards/ContactCard";
 import SupercarCard from "@/components/cards/SupercarCard";
 import { SupercarCardProps } from "@/Libs/interfaces";
+import PageHeader from "@/components/others/PageHeader";
 
 const supercars: SupercarCardProps[] = [
   {
@@ -37,6 +38,7 @@ const supercars: SupercarCardProps[] = [
 const Supercars = () => {
   return (
     <main className="pt-[91px] max-w-screen-2xl m-auto">
+      <PageHeader title="SUPERCARS" phrase="" />
       <section className="flex flex-col gap-6 my-8">
         {supercars.map((c) => (
           <SupercarCard key={c.image} {...c} />

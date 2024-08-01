@@ -1,6 +1,9 @@
 import { PageHeaderProps } from "@/Libs/interfaces";
 import Image from "next/image";
 import React from "react";
+import { Nunito } from "next/font/google";
+
+const nunito = Nunito({ subsets: ["latin"], weight: ["900"] });
 
 const PageHeader = ({ title, phrase }: Readonly<PageHeaderProps>) => {
   return (
@@ -31,7 +34,11 @@ const PageHeader = ({ title, phrase }: Readonly<PageHeaderProps>) => {
           </li>
           {title && (
             <li className="w-full pt-4 pb-6">
-              <p>{title}</p>
+              <p
+                className={`text-4xl text-center font-bolder text-[#b0a17b] title-page-header ${nunito.className} underline decoration-black`}
+              >
+                <i>{title}</i>
+              </p>
             </li>
           )}
           {phrase && (
