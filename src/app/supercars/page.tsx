@@ -39,7 +39,7 @@ const Supercars = () => {
     <main className="pt-[91px] max-w-screen-2xl m-auto">
       <section className="flex flex-col gap-6 my-8">
         {supercars.map((c) => (
-          <SupercarCard {...c} />
+          <SupercarCard key={c.image} {...c} />
         ))}
       </section>
       <ContactCard />
